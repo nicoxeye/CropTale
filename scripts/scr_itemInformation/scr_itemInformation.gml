@@ -1,0 +1,24 @@
+function itemInformation(){
+	
+	//Item Types (what character can have an inventory)
+		/*
+		Crop
+		Tool
+		Consumable
+		Seed
+		Food
+		*/
+		
+	global.ItemWheat = {
+		//struct
+		Name: "Wheat",
+		Sprite: spr_wheat,
+		ItemType: "Crop"
+	}
+	
+	global.ItemTomato = {
+		Name: "Tomato",
+		Sprite: spr_tomato,
+		ItemType: "Crop"
+	}
+}
