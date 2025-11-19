@@ -41,6 +41,7 @@ if place_meeting(x, y + yspd, obj_wall) {
 
 
 
+
 if xspd == 0 && yspd == 0 {
 	image_index = 0;
 }

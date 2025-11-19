@@ -1,3 +1,3 @@
-if keyboard_check(ord("I")) {
+if keyboard_check_pressed(ord("I")) {
 	InvOpen = !InvOpen;
 }

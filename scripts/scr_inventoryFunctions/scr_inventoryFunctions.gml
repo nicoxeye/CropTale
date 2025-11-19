@@ -48,3 +48,47 @@ function inventoryRemove(InvArray, Item, Quantity) {
 	}
 	
 }
+
+
+function InvStartDrag(InvArray, Slot) { 
+	
+	if InvFrom == undefined && InvArray[Slot] != -1 { 
+		InvFrom = InvArray; 
+		SlotFrom = Slot; 
+	} 
+	return; 
+	
+} 
+
+
+function InvEndDrag(InvArray, Slot) { 
+	
+	if InvFrom != undefined { 
+		InvTo = InvArray; SlotTo = Slot; 
+		var TempFrom = InvFrom[SlotFrom]; 
+		var TempTo = InvTo[SlotTo]; 
+		
+		// switching the two slots 
+		InvFrom[SlotFrom] = TempTo; 
+		InvTo[SlotTo] = TempFrom; 
+		
+		//reseting
+		InvFrom = undefined; 
+		InvTo = undefined; 
+		SlotFrom = undefined; 
+		SlotTo = undefined; 
+	} 
+	return; 
+	
+} 
+
+
+function ShowItemDrag() { 
+	
+	// drawing the dragged item
+	if InvFrom != undefined { 
+		var Sprite = InvFrom[SlotFrom][0].Sprite; 
+		draw_sprite(Sprite, 0, device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)); 
+	} 
+	
+}

@@ -3,15 +3,21 @@ itemInformation();
 
 // inventory size
 InvWidth = 3;
-InvHeight = 5;
+InvHeight = 4;
 
 Inv = array_create(InvWidth*InvHeight, -1);
 
 InvOpen = false;
 
-// GUI init
-// temporary hardcoded numbers cause with the camera object it doesnt work??
-display_set_gui_size(480, 270);
+// dragging variables
+// from what inventory ex. from inv to chest
+InvFrom = undefined;
+InvTo = undefined;
+// which slot it's moved
+SlotFrom = undefined;
+SlotTo = undefined;
+
+// GUI init in camera object
 
 inventoryAdd(Inv, global.ItemWheat, 4);
 inventoryAdd(Inv, global.ItemTomato, 4);
