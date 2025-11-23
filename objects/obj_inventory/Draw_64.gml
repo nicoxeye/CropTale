@@ -3,7 +3,6 @@
 xDiff = obj_camera.camWidth / 2;
 yDiff = obj_camera.camHeight / 2;
 
-hoveredSlot = -1; // reset at the start
 
 // draw_sprite(spr_player_left, 0, xDiff, yDiff) //checking if gui works
 

@@ -21,4 +21,10 @@ function itemInformation(){
 		Sprite: spr_tomato,
 		ItemType: "Crop"
 	}
+	
+	global.ItemHoe = {
+		Name: "Hoe",
+		Sprite: spr_hoe,
+		ItemType: "Tool"
+	}
 }

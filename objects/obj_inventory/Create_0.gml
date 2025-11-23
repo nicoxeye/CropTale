@@ -1,5 +1,7 @@
 // stores data for every item
 itemInformation();
+// crop initialization
+CropInformation();
 
 // inventory size
 InvWidth = 3;
