@@ -109,7 +109,7 @@ if Inv[HotBarSel] != -1 {
 							break;
 							
 						case global.ItemTomatoSeed:
-							Crop = global.CropWheat;
+							Crop = global.CropTomato;
 							break;
 							
 					}
