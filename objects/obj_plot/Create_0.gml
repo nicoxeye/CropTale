@@ -1,4 +1,4 @@
-Crop = global.CropWheat;
+Crop = undefined;
 
 // to update the animation of the crop
 Tick = 0;

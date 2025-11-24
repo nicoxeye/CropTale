@@ -27,4 +27,16 @@ function itemInformation(){
 		Sprite: spr_hoe,
 		ItemType: "Tool"
 	}
+	
+	global.ItemWheatSeed = {
+		Name: "WheatSeed",
+		Sprite: spr_wheatSeed,
+		ItemType: "Seed"
+	}
+	
+	global.ItemTomatoSeed = {
+		Name: "TomatoSeed",
+		Sprite: spr_tomatoSeed,
+		ItemType: "Seed"
+	}
 }

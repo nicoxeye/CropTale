@@ -18,4 +18,4 @@ if Crop != undefined {
 	draw_sprite_ext(Sprite, SubImage, x, y, 1, 1, 0, c_white, 1);
 }
 
-// draw_text(x, y, Tick)
+draw_text(x, y, Tick)

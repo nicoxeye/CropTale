@@ -34,8 +34,12 @@ function invRemove(InvArray, Item){
 		if InvArray[i] != -1 { // if not empty
 			//checking if the item is in inventory
 			if InvArray[i][0] == Item {
-				InvArray[i][1]--;
-				return;
+				if InvArray[i][1] > 1 {
+					InvArray[i][1]--;
+					return;
+				} else {
+					InvArray[i] = -1;
+				}
 			}
 		}
 	}
